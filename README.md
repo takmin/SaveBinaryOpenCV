@@ -20,7 +20,7 @@ Please read "SaveBinaryCV.h".  You can find how to use these functions.
 
 For example, if you want to save cv::Mat and std::vector<cv::KeyPoint> in one file, you can write save and load function as follows:
 
-"""
+```
 void Save(const std::string& filename, const cv::Mat& A, const std::vector<cv::KeyPoint>& B)
 {
   std::ofstream ofs(filename, std::ios::binary);
@@ -35,5 +35,4 @@ void Load(const std::string& filename, cv::Mat& A, std::vector<cv::KeyPoint>& B)
   readMatBinary(ifs, A);
   readKeyPointBinary(ifs, B)
 }
-
-"""
+```
